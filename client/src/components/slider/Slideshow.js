@@ -1,9 +1,7 @@
 import React from 'react'
 import { Slide } from 'react-slideshow-image'
 
-import sample1 from '../slider/sample4.png'
-import sample2 from '../slider/sample2.png'
-import sample3 from '../slider/sample3.png'
+import { sampleImage1, sampleImage2, sampleImage3 } from '../../assets/index'
 
 const properties = {
   duration: 5000,
@@ -18,28 +16,29 @@ const properties = {
 }
 const quote =
   '  Inner art inner soul is a platform in which you get in contact with a graphic designer and could start creating your own design!'
-
 const style = {
-  div: {
+  size: {
     width: '30%',
     height: '30%',
     marginRight: 'auto',
     marginLeft: 'auto'
   },
   quote: {
-    paddingTop: '60%',
+    paddingTop: '80%',
     color: 'white',
     bottom: '200',
-    fontSize: 20
+    fontSize: '1.5vw'
   },
   button: {
+    height: '30%',
     borderRadius: '25px',
     border: 'none',
-    padding: '15px',
+
     backgroundColor: 'black',
     margin: 'auto',
     display: 'block',
-    color: 'white'
+    color: 'white',
+    fontSize: '1vw'
   }
 }
 const Slideshow = () => {
@@ -47,8 +46,28 @@ const Slideshow = () => {
     <div className='slide-container'>
       <Slide {...properties}>
         <div className='each-slide'>
-          <div style={{ height: 500, backgroundImage: 'url(' + sample1 + ')' }}>
-            <div style={style.div}>
+          <div
+            style={{
+              height: 600,
+              backgroundImage: 'url(' + sampleImage1 + ')'
+            }}
+          >
+            <div style={style.size}>
+              <p style={style.quote}>{quote}</p>
+              <br />
+              <button style={style.button}>START CREATING</button>
+            </div>
+          </div>
+        </div>
+
+        <div className='each-slide'>
+          <div
+            style={{
+              height: 600,
+              backgroundImage: 'url(' + sampleImage2 + ')'
+            }}
+          >
+            <div style={style.size}>
               <h5 style={style.quote}>{quote}</h5>
               <br />
               <button style={style.button}>START CREATING</button>
@@ -57,18 +76,13 @@ const Slideshow = () => {
         </div>
 
         <div className='each-slide'>
-          <div style={{ height: 500, backgroundImage: 'url(' + sample2 + ')' }}>
-            <div style={style.div}>
-              <h5 style={style.quote}>{quote}</h5>
-              <br />
-              <button style={style.button}>START CREATING</button>
-            </div>
-          </div>
-        </div>
-
-        <div className='each-slide'>
-          <div style={{ height: 500, backgroundImage: 'url(' + sample3 + ')' }}>
-            <div style={style.div}>
+          <div
+            style={{
+              height: 600,
+              backgroundImage: 'url(' + sampleImage3 + ')'
+            }}
+          >
+            <div style={style.size}>
               <h5 style={style.quote}>{quote}</h5>
               <br />
               <button style={style.button}>START CREATING</button>
