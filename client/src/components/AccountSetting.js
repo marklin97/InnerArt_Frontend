@@ -3,12 +3,12 @@ import img from '../../images/designer.jpg'
 import './AccountSetting.css'
 
 export const AccountSetting = () => {
+  // Designer account setting page
   return (
     <div>
       <div class="container manage-section">
-
         <div class="row">
-
+          {/* Account Setting Section */}
           <div class="col-lg-3">
             <h3 class="my-4">Account Settings</h3>
             <div class="list-group list-group-flush">
@@ -21,7 +21,7 @@ export const AccountSetting = () => {
             </div>
           </div>
 
-
+          {/* Manage Account Section */}
           <div class="col-lg-9 mt-4">
 
             <h3 className="py-3">Manage Account</h3>
@@ -55,6 +55,7 @@ export const AccountSetting = () => {
               </div>
             </div>
 
+            {/* Second manage account section */}
             <ul className="list-group list-group-flush py-3">
               <li class="list-group-item list-group-item-action d-flex align-items-center justify-content-between">
                 <span class="item-text">Payment method</span>

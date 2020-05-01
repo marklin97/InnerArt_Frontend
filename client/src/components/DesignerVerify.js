@@ -1,6 +1,7 @@
 import React from 'react'
 
 const DesignerVerify = () => {
+  // Designer verify page
   return (
     <div>
       <div class="container">
