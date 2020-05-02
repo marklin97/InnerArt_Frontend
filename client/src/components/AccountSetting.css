@@ -1,0 +1,16 @@
+
+.manage-section img {
+  max-width: 18vh;
+}
+
+.manage-section {
+  min-height: 90vh;
+}
+
+.footer {
+  min-height: 10vh;
+}
+
+.footer p {
+  margin: 0;
+}
