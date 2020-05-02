@@ -1,6 +1,5 @@
 import React from 'react'
 import { Slide } from 'react-slideshow-image'
-
 import { sampleImage1, sampleImage2, sampleImage3 } from '../../assets/index'
 
 const properties = {
@@ -14,8 +13,10 @@ const properties = {
     console.log(`slide transition from ${oldIndex} to ${newIndex}`)
   }
 }
+
 const quote =
   '  Inner art inner soul is a platform in which you get in contact with a graphic designer and could start creating your own design!'
+
 const style = {
   size: {
     width: '30%',
@@ -41,6 +42,7 @@ const style = {
     fontSize: '1vw'
   }
 }
+
 const Slideshow = () => {
   return (
     <div className='slide-container'>
